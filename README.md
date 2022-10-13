@@ -12,6 +12,6 @@ To create the machine learning model itself, I **compared 2 different methods**:
 
 Based on the average of accuracy, precision, recall, and F1-score for each fold in cross-validation, XGB was chosen as the best model to predict the churn label for this particular dataset. Using the best hyperparameters I had tried in the tuning process using GridSearchCV, I created a final XGB model instance which I trained using all data in **train.csv**. Here is how the decision tree of said model instance looks like:
 
-![xgb.plot_tree(clf_final)](https://photos.app.goo.gl/i6927Xws4jYEjx4t9)
+![xgb.plot_tree(clf_final)](https://raw.githubusercontent.com/syafa-kh/CustomerChurnML/main/final%20model's%20decision%20tree.png)
 
 This final model was later used to predict customer's churn status from unseen data (**test.csv**). 
